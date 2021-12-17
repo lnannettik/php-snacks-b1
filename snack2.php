@@ -7,6 +7,7 @@
 
 
 $name = $_GET['name'];
+echo $name;
 $mail = $_GET['mail'];
 $age = $_GET['age'];
 

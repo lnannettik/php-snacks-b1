@@ -46,13 +46,16 @@ $posts = [
     ],
 ];
 
+$posts2 = array_keys($posts);
 
-echo $posts[$i]['title'];
 
+for ($i = 0; $i < count($posts); $i++) {
+    echo $posts2[$i];
+    for ($j = 0; $j < count($posts[$posts2[$i]]); $j++) {
+        echo $posts[$posts2[$i]] [$j]['title'].'<br>';
+        echo $posts[$posts2[$i]] [$j]['author'];
+        echo $posts[$posts2[$i]] [$j]['text'];
+    }
+};
 
-// for ($i = 0; $i < count($posts); $i++) {
-//     // echo $posts[$i]['team1']." - ".$matches[$i]['team2']." | ".$matches[$i]['point_team_1']." - ".$matches[$i]['point_team_2']. "<br>";
-//     echo $posts[$i]['title'];
-// };
-
-// ?>
+?>
