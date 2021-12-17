@@ -50,11 +50,13 @@ $posts2 = array_keys($posts);
 
 
 for ($i = 0; $i < count($posts); $i++) {
-    echo $posts2[$i];
+    echo $posts2[$i].'<br>';
+
     for ($j = 0; $j < count($posts[$posts2[$i]]); $j++) {
         echo $posts[$posts2[$i]] [$j]['title'].'<br>';
-        echo $posts[$posts2[$i]] [$j]['author'];
-        echo $posts[$posts2[$i]] [$j]['text'];
+        echo $posts[$posts2[$i]] [$j]['author'].'<br>';
+        echo $posts[$posts2[$i]] [$j]['text'].'<br>';
+        echo '<br>';
     }
 };
 
