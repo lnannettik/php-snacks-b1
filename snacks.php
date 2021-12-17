@@ -19,32 +19,36 @@
 
 
 
-    // $matches = [
-    //     [
-    //         'team1' => 'Acqua S.Bernardo Cantù',
-    //         'team2' => 'Oriora Pistoia',
-    //         'point_team_1' => 70,
-    //         'point_team_2' => 45
-    //     ],
-    //     [
-    //         'team1' => 'Fortitudo Pompea Bologna',
-    //         'team2' => 'Dolomiti Energia Trentino',
-    //         'point_team_1' => 82,
-    //         'point_team_2' => 83
-    //     ],
-    //     [
-    //         'team1' => 'Pallacanestro Trieste',
-    //         'team2' => 'Virtus Roma',
-    //         'point_team_1' => 72,
-    //         'point_team_2' => 33
-    //     ],
-    //     [
-    //         'team1' => 'Openjobmetis Varese',
-    //         'team2' => 'Germani Basket Brescia',
-    //         'point_team_1' => 101,
-    //         'point_team_2' => 99
-    //     ],
-    // ];
+    $matches = [
+        [
+            'team1' => 'Acqua S.Bernardo Cantù',
+            'team2' => 'Oriora Pistoia',
+            'point_team_1' => 70,
+            'point_team_2' => 45
+        ],
+        [
+            'team1' => 'Fortitudo Pompea Bologna',
+            'team2' => 'Dolomiti Energia Trentino',
+            'point_team_1' => 82,
+            'point_team_2' => 83
+        ],
+        [
+            'team1' => 'Pallacanestro Trieste',
+            'team2' => 'Virtus Roma',
+            'point_team_1' => 72,
+            'point_team_2' => 33
+        ],
+        [
+            'team1' => 'Openjobmetis Varese',
+            'team2' => 'Germani Basket Brescia',
+            'point_team_1' => 101,
+            'point_team_2' => 99
+        ],
+    ];
+
+    for ($i = 0; $i < count($matches); $i++) {
+        echo $matches[$i]['team1']." - ".$matches[$i]['team2']." | ".$matches[$i]['point_team_1']." - ".$matches[$i]['point_team_2']. "<br>";
+    };
 
 
 
@@ -56,30 +60,33 @@
     // Se tutto è ok stampare "Accesso riuscito", altrimenti "Accesso negato" -->
 
 
-$name = $_GET['name'];
-$mail = $_GET['mail'];
-$age = $_GET['age'];
+// $name = $_GET['name'];
+// $mail = $_GET['mail'];
+// $age = $_GET['age'];
 
 
-if (
-    strlen($name) > 3 
-    &&
-    strpos($mail, '.') !== false 
-    &&
-    strpos($mail, '@') !== false 
-    && 
-    !is_nan($age)
-) {
-    echo 'accesso riuscito';
+// if (
+//     strlen($name) > 3 
+//     &&
+//     strpos($mail, '.') !== false 
+//     &&
+//     strpos($mail, '@') !== false 
+//     && 
+//     !is_nan($age)
+// ) {
+//     echo 'accesso riuscito';
 
-}else{
+// }else{
 
-    echo 'eh no';
-};
+//     echo 'eh no';
+// };
+
+
 
 // Snack 3
 // Creare un array di array. Ogni array figlio avrà come chiave una data in questo formato: DD-MM-YYYY es 01-01-2007 e come valore un array di post associati a quella data. Stampare ogni data con i relativi post.
 // Qui l'array di esempio: https://www.codepile.net/pile/R2K5d68z
+
 
 
 
