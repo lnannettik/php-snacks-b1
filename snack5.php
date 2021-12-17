@@ -9,13 +9,16 @@ echo $paragrafo;
 echo '<br>';
 echo '<br>';
 
-$newParagrafo = explode('.', $paragrafo);
+$nemParagrafo = str_replace('.', '.<br>', $paragrafo);
+echo $nemParagrafo;
 
-for ($i=0; $i < count($newParagrafo); $i++) {
-    echo $newParagrafo[$i].'<br>';
-}
+// $newParagrafo = explode('.', $paragrafo);
 
-echo '<br>';
+// for ($i=0; $i < count($newParagrafo); $i++) {
+//     echo $newParagrafo[$i].'<br>';
+// }
+
+// echo '<br>';
  
 
 
